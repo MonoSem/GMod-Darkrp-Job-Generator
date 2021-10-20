@@ -11,6 +11,9 @@ print("GMod DarkRP Job Generator made by")
 print(author)
 print("and Luiggi33")
 
+def to_bool(s):
+    return 1 if s == 'true' else 0
+
 def generator():
     print("Exit with CTRL+C at all time")
     print("")
@@ -29,6 +32,7 @@ def generator():
     hasLicense = input('Enter if this Job spawns with a License (true/false): ')
     candemote = input('Enter if this Job can be demoted (true/false): ')
     category = input('Enter the Category of the job: ')
+    admin = to_bool(admin)
 
     print("")
     print("")
@@ -41,7 +45,7 @@ def generator():
     print('command = "' + command + '",')
     print('max = ' + max + ',')
     print('salary = ' + salary + ',')
-    print('admin = ' + int(admin) + ',')
+    print('admin = ' + str(admin) + ',')
     print('vote = ' + vote + ',')
     print('hasLicense = ' + hasLicense + ',')
     print('candemote = ' + candemote + ',')
