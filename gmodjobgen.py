@@ -30,7 +30,7 @@ def generator():
 
     print("")
     print("#----------------------------#")
-    print(upper(teamid) + ' = DarkRP.createJob("' + name  + '"'', {') 
+    print('TEAM_' + upper(teamid) + ' = DarkRP.createJob("' + name  + '"'', {') 
     print('color = Color(' + color + '),')
     print('model = {' + model + '}')
     print('description = [[' + description + ']],')
