@@ -25,9 +25,9 @@ def generator():
     max = input('Enter the limit of the job: ')
     salary = input('Enter the salary of the job: ')
     admin = input('Enter if its a admin only job (true/false): ')
-    vote = input('Enter the vote of the job (true/false): ')
-    hasLicense = input('Enter the License of the job (true/false): ')
-    candemote = input('Enter the candemote of the job (true/false): ')
+    vote = input('Enter if this Job needs to be voted on (true/false): ')
+    hasLicense = input('Enter if this Job spawns with a License (true/false): ')
+    candemote = input('Enter if this Job can be demoted (true/false): ')
     category = input('Enter the Category of the job: ')
 
     print("")
