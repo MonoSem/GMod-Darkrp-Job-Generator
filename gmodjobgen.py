@@ -10,6 +10,7 @@ author = """
 print("GMod DarkRP Job Generator made by")
 print(author)
 print("and Luiggi33")
+
 def generator():
     print("Exit with CTRL+C at all time")
     print("")
@@ -29,8 +30,9 @@ def generator():
     category = input('Enter the Category of the job: ')
 
     print("")
+    print("")
     print("#----------------------------#")
-    print('TEAM_' + upper(teamid) + ' = DarkRP.createJob("' + name  + '"'', {') 
+    print('TEAM_' + teamid.upper() + ' = DarkRP.createJob("' + name  + '"'', {') 
     print('color = Color(' + color + '),')
     print('model = {' + model + '}')
     print('description = [[' + description + ']],')
@@ -42,11 +44,10 @@ def generator():
     print('vote =' + vote + ',')
     print('hasLicense =' + hasLicense + ',')
     print('candemote =' + candemote + ',')
-    print('category = "' + + '"')
+    print('category = "' + category + '"')
     print('})')
     print("")
 
 flag = True
 while flag:
     generator()
-    flag = True
